@@ -1,6 +1,7 @@
 {
   "apiKey":"",
   "cycles": 15,
+  "delay": 2,
   "pause": 1,
   "tests":[
     {

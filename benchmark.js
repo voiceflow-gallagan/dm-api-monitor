@@ -86,8 +86,9 @@ async function main(loop, pause) {
     process.stdout.write(clc.art(text, style))
 
     for (t = 0; t < configfile.tests.length; t++) {
-      type.push(configfile.tests[t].label)
+      type.push(configfile.tests[t].label || 'Test')
       await interact(userID, configfile.tests[t].payload)
+      sleep(configfile.delay || 0)
     }
 
     if (x != loop - 1) {

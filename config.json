@@ -1,0 +1,23 @@
+{
+  "apiKey":"",
+  "cycles": 15,
+  "pause": 1,
+  "tests":[
+    {
+      "label": "Launch",
+      "payload":{ "type": "launch" }
+    },
+    {
+      "label": "Interact",
+      "payload":{ "type": "text", "payload": "something" }
+    },
+    {
+      "label": "API",
+      "payload":{ "type": "text", "payload": "api not found" }
+    },
+    {
+      "label": "Stop",
+      "payload":{ "type": "text", "payload": "stop" }
+    }
+  ]
+}
